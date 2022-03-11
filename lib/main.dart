@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:pkl/main_screen.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SplashScreenView(
         navigateRoute: MainScreen(),
-        duration: 4000,
+        duration: 6000,
         imageSize: 130,
         imageSrc: "assets/img/alquran.png",
         backgroundColor: Colors.white,
-        text: "Aplikasi Stay Halal Brother",
+        text: "Aplikasi Tata Cara Sholat Sunnah",
         textType: TextType.TyperAnimatedText,
         textStyle: TextStyle(
           fontSize: 30.0,

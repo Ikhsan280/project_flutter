@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:pkl/menu1_screen.dart';
 import 'package:pkl/menu2_screen.dart';
 import 'package:pkl/duha_screen.dart';
+import 'package:pkl/tahajud_screen.dart';
+import 'package:pkl/jenazah_screen.dart';
+import 'package:pkl/taubat_screen.dart';
+import 'package:pkl/witir_screen.dart';
+
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -73,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MenuScreen1(),
+                    builder: (context) => Duha(),
                 ));
               }),
         ),
@@ -100,7 +105,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MenuScreen1(),
+                    builder: (context) => Tahajud(),
                 ));
               }),
         ),
@@ -127,7 +132,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MenuScreen1(),
+                    builder: (context) => Taubat(),
                 ));
               }),
         ),
@@ -143,7 +148,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               child: Text(
-                "Sholat Idul Fitri",
+                "Sholat Witir",
                  style: TextStyle(
                  color: Colors.white,
                 fontFamily: 'DancingScript',
@@ -154,38 +159,38 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MenuScreen1(),
+                    builder: (context) => Witir(),
                 ));
               }),
         ),
       ),
-      Container(
-          margin: EdgeInsets.all(5),
-        child: Container(
-          child: TextButton(
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.lightBlueAccent,
-                shape: RoundedRectangleBorder(
-                   borderRadius: BorderRadius.circular(100),
-                ),
-              ),
-              child: Text(
-                "Sholat Idul Adha",
-                 style: TextStyle(
-                 color: Colors.white,
-                fontFamily: 'DancingScript',
-                fontSize: 18),
+      // Container(
+      //     margin: EdgeInsets.all(5),
+      //   child: Container(
+      //     child: TextButton(
+      //         style: TextButton.styleFrom(
+      //           backgroundColor: Colors.lightBlueAccent,
+      //           shape: RoundedRectangleBorder(
+      //              borderRadius: BorderRadius.circular(100),
+      //           ),
+      //         ),
+      //         child: Text(
+      //           "Sholat Tahajud",
+      //            style: TextStyle(
+      //            color: Colors.white,
+      //           fontFamily: 'DancingScript',
+      //           fontSize: 18),
                 
-                ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => MenuScreen1(),
-                ));
-              }),
-        ),
-      ),
+      //           ),
+      //         onPressed: () {
+      //           Navigator.push(
+      //             context,
+      //             MaterialPageRoute(
+      //               builder: (context) => Tahajud(),
+      //           ));
+      //         }),
+      //   ),
+      // ),
       Container(
           margin: EdgeInsets.all(5),
         child: Container(
@@ -208,7 +213,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MenuScreen1(),
+                    builder: (context) => Jenazah(),
                 ));
               }),
         ),

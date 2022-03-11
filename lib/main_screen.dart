@@ -15,7 +15,6 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     MenuScreen1(),
-    MenuScreen2(),
     ProfileScreen(),
   ];
   @override
@@ -36,10 +35,7 @@ class _MainScreenState extends State<MainScreen> {
             icon: Icon(Icons.assignment),
             label: 'Menu 1',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
-            label: 'Menu 2',
-          ),
+          
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
